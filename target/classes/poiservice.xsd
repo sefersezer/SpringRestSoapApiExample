@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:9000"
+           targetNamespace="http://localhost:9000" elementFormDefault="qualified">
+
+    <xs:element name="getPoiRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="value" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="savePoiRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="poiEntity" type="tns:poiEntity"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="deletePoiRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="poiEntity" type="tns:poiEntity"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getPoiResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="poiEntity" type="tns:poiEntity"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="poiEntity">
+        <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+            <xs:element name="category" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+</xs:schema>
