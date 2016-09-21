@@ -1,7 +1,7 @@
-package com.exastax.service.endpoint;
+package com.ssezer.service.endpoint;
 
-import com.exastax.service.PoiRepositoryService;
-import com.exastax.ws.model.PoiEntity;
+import com.ssezer.service.PoiRepositoryService;
+import com.ssezer.ws.model.PoiEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 

@@ -1,4 +1,4 @@
-package com.exastax.ws.soap;
+package com.ssezer.ws.soap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

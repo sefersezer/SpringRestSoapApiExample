@@ -1,6 +1,6 @@
-package com.exastax.ws.rest;
+package com.ssezer.ws.rest;
 
-import com.exastax.ws.model.PoiEntity;
+import com.ssezer.ws.model.PoiEntity;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

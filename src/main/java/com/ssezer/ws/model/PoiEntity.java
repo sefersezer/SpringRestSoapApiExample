@@ -1,4 +1,4 @@
-package com.exastax.ws.model;
+package com.ssezer.ws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

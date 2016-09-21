@@ -1,6 +1,6 @@
-package com.exastax.model;
+package com.ssezer.model;
 
-import com.exastax.ws.model.PoiEntity;
+import com.ssezer.ws.model.PoiEntity;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 

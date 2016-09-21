@@ -3,4 +3,4 @@
         namespace = "http://localhost:9000",
         elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED
 )
-package com.exastax.ws.soap.dao;
+package com.ssezer.ws.soap.dao;

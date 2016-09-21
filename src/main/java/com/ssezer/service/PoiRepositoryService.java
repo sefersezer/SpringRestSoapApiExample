@@ -1,9 +1,9 @@
-package com.exastax.service;
+package com.ssezer.service;
 
-import com.exastax.model.Mapper;
-import com.exastax.model.Poi;
-import com.exastax.model.repository.PoiRepository;
-import com.exastax.ws.model.PoiEntity;
+import com.ssezer.model.Mapper;
+import com.ssezer.model.Poi;
+import com.ssezer.model.repository.PoiRepository;
+import com.ssezer.ws.model.PoiEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

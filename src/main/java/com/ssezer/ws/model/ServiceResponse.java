@@ -1,4 +1,4 @@
-package com.exastax.ws.model;
+package com.ssezer.ws.model;
 
 import lombok.Getter;
 import lombok.Setter;

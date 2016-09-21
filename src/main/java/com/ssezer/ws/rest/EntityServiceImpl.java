@@ -1,8 +1,8 @@
-package com.exastax.ws.rest;
+package com.ssezer.ws.rest;
 
-import com.exastax.service.endpoint.PoiRestEndpoint;
-import com.exastax.ws.model.PoiEntity;
-import com.exastax.ws.model.ServiceResponse;
+import com.ssezer.service.endpoint.PoiRestEndpoint;
+import com.ssezer.ws.model.PoiEntity;
+import com.ssezer.ws.model.ServiceResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

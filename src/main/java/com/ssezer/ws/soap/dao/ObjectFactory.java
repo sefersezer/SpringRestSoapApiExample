@@ -1,6 +1,6 @@
-package com.exastax.ws.soap.dao;
+package com.ssezer.ws.soap.dao;
 
-import com.exastax.ws.model.PoiEntity;
+import com.ssezer.ws.model.PoiEntity;
 
 import javax.xml.bind.annotation.XmlRegistry;
 

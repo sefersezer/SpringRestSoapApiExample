@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.exastax</groupId>
+    <groupId>com.ssezer</groupId>
     <artifactId>PoiSoapProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -12,7 +12,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.4.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from com.exastax.model.repository -->
+        <relativePath/> <!-- lookup parent from com.ssezermodel.repository -->
     </parent>
 
     <properties>
@@ -112,7 +112,7 @@
                 </executions>
                 <configuration>
                     <schemaDirectory>${project.basedir}/src/main/resources/</schemaDirectory>
-                    <outputDirectory>src/main/java/com/exastax/ws/soap/dao/</outputDirectory>
+                    <outputDirectory>src/main/java/com/ssezer/ws/soap/dao/</outputDirectory>
                     <clearOutputDir>false</clearOutputDir>
                 </configuration>
             </plugin>

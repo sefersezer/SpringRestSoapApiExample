@@ -1,10 +1,9 @@
-package com.exastax.config;
+package com.ssezer.config;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.ServerAddress;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -14,7 +13,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 import static java.util.Collections.singletonList;
 
 @Configuration // Note : bu annotation file read için değil, mongodb için gerekli.
-@EnableMongoRepositories(basePackages = "com.exastax.model.repository")
+@EnableMongoRepositories(basePackages = "com.ssezer.model.repository")
 public class MongoConfig extends AbstractMongoConfiguration {
 
     @Autowired

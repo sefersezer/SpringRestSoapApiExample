@@ -1,11 +1,11 @@
-package com.exastax.service.endpoint;
+package com.ssezer.service.endpoint;
 
-import com.exastax.service.PoiRepositoryService;
-import com.exastax.ws.model.PoiEntity;
-import com.exastax.ws.soap.dao.SavePoiRequest;
-import com.exastax.ws.soap.dao.DeletePoiRequest;
-import com.exastax.ws.soap.dao.GetPoiRequest;
-import com.exastax.ws.soap.dao.GetPoiResponse;
+import com.ssezer.service.PoiRepositoryService;
+import com.ssezer.ws.model.PoiEntity;
+import com.ssezer.ws.soap.dao.SavePoiRequest;
+import com.ssezer.ws.soap.dao.DeletePoiRequest;
+import com.ssezer.ws.soap.dao.GetPoiRequest;
+import com.ssezer.ws.soap.dao.GetPoiResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;

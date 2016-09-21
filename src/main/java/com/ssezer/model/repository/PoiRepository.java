@@ -1,6 +1,6 @@
-package com.exastax.model.repository;
+package com.ssezer.model.repository;
 
-import com.exastax.model.Poi;
+import com.ssezer.model.Poi;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

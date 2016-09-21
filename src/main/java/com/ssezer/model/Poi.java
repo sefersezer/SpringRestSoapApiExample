@@ -1,4 +1,4 @@
-package com.exastax.model;
+package com.ssezer.model;
 
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,8 +8,7 @@ import java.io.Serializable;
 
 @Data
 @Document(collection = "poi")
-@XmlRootElement
-public class Poi implements Serializable {
+public class Poi{
     private String id;
     private String value;
     private String category;
