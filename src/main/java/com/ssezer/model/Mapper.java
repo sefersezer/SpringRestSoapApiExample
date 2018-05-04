@@ -3,26 +3,23 @@ package com.ssezer.model;
 import com.ssezer.ws.model.PoiEntity;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class Mapper {
 
-    ModelMapper modelMapper = new ModelMapper();
+  private ModelMapper modelMapper = new ModelMapper();
 
-    public PoiEntity mapPoi(Poi poiDTO) {
-        return modelMapper.map(poiDTO, PoiEntity.class);
-    }
+  public PoiEntity mapPoi(Poi poiDTO) {
+    return modelMapper.map(poiDTO, PoiEntity.class);
+  }
 
-    public List<PoiEntity> mapPoiList(List<Poi> poiList) {
-        List<PoiEntity> poiEntityList = new ArrayList<>();
-        poiList.forEach(poi -> poiEntityList.add(mapPoi(poi)));
-        return poiEntityList;
-    }
+  public List<PoiEntity> mapPoiList(List<Poi> poiList) {
+    return poiList.stream().map(this::mapPoi).collect(Collectors.toList());
+  }
 
-    public Poi mapPoiDTO(PoiEntity poiEntity) {
-        return modelMapper.map(poiEntity, Poi.class);
-    }
+  public Poi mapPoiDTO(PoiEntity poiEntity) {
+    return modelMapper.map(poiEntity, Poi.class);
+  }
 }

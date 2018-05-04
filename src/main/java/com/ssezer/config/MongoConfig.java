@@ -16,18 +16,22 @@ import static java.util.Collections.singletonList;
 @EnableMongoRepositories(basePackages = "com.ssezer.model.repository")
 public class MongoConfig extends AbstractMongoConfiguration {
 
-    @Autowired
-    private Environment environment;
+  private Environment environment;
 
-    @Override
-    public String getDatabaseName() {
-        return environment.getProperty("mongodb.name");
-    }
+  @Autowired
+  public MongoConfig(Environment environment) {
+    this.environment = environment;
+  }
 
-    @Bean
-    @Override
-    public Mongo mongo() throws Exception {
-        return new MongoClient(singletonList(new ServerAddress(environment.getProperty("mongodb.host"), Integer.parseInt(environment.getProperty("mongodb.port")))));
-    }
+  @Override
+  public String getDatabaseName() {
+    return environment.getProperty("mongodb.name");
+  }
+
+  @Bean
+  @Override
+  public Mongo mongo() {
+    return new MongoClient(singletonList(new ServerAddress(environment.getProperty("mongodb.host"), Integer.parseInt(environment.getProperty("mongodb.port")))));
+  }
 
 }

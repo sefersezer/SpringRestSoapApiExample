@@ -13,35 +13,37 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class PoiEntity {
 
-    @XmlElement(required = true)
-    protected String id;
-    @XmlElement(required = true)
-    protected String value;
-    @XmlElement(required = true)
-    protected String category;
+  @XmlElement(required = true)
+  protected String id;
 
-    public String getId() {
-        return id;
-    }
+  @XmlElement(required = true)
+  protected String value;
 
-    public void setId(String value) {
-        this.id = value;
-    }
+  @XmlElement(required = true)
+  protected String category;
 
-    public String getValue() {
-        return value;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setValue(String value) {
-        this.value = value;
-    }
+  public void setId(String value) {
+    this.id = value;
+  }
 
-    public String getCategory() {
-        return category;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    public void setCategory(String value) {
-        this.category = value;
-    }
+  public void setValue(String value) {
+    this.value = value;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String value) {
+    this.category = value;
+  }
 
 }
